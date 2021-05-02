@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/alertStyle.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="container">
+    <div class="contTitle">
+        <h1>Cadastro de Usuário</h1>
+    </div>
+    <form class="contForm" id="profileForm">
+        <div class="contLeft">
+            <div class="contLeftUp">
+            <div class="contNameNickname">
+
+                <label for="iName">Nome</label>
+                <input type="text" name="Nome" id="iName"/>
+
+                <label for="iNickname">Sobrenome</label>
+                <input type="text" name="Sobrenome" id="iNickname" />
+
+            </div>
+            <div class="contEmailPassword">
+
+                <label for="iEmail">Email</label>
+                <input type="email" name="E-Mail" id="iEmail"/>
+
+                <label for="iPassword">Senha</label>
+                <input type="password" name="Senha" id="iPassword" />
+
+            </div>
+            </div>
+            <div class="contLeftDown">
+                <div class="contGender">
+
+                    
+                    <input type="radio" name="Genero" value="male" id="gMale" />
+                    <label for="gMale">
+                        <img src="./Icons/male-64.png" alt="MaleIcon" />Masculino
+                    </label>
+                    
+
+                    
+                    <input type="radio" name="Genero" value="female" id="gFemale" />
+                    <label for="gFemale">
+                        <img src="./Icons/female-64.png" alt="FemaleIcon" />Feminino
+                    </label>
+                    
+
+                    
+                    <input type="radio" name="Genero" value="other" id="gOther" />
+                    <label for="gOther">
+                        <img src="./Icons/other-64.png" alt="OtherIcon" />Outros
+                    </label>
+                    
+
+                </div>
+
+                <div class="languageChoiceText">
+                <p>Selecione as linguagens de seu interesse</p>
+                </div>
+                <div class="contLanguagesChoice">
+                    
+                        <input type="checkbox" name="language01" value="python" id="language01"/>
+                        <label for="language01">
+                            <img src="./Icons/languages/python-32px.png" alt="python" />
+                        </label>
+             
+                        <input type="checkbox" name="language02" value="typescript" id="language02"/>
+                        <label for="language02">
+                            <img src="./Icons/languages/typescript_32px.png" alt="typescript" />
+                        </label>
+     
+                        <input type="checkbox" name="language03" value="html5" id="language03"/>
+                        <label for="language03">
+                            <img src="./Icons/languages/html_5_32px.png" alt="html5" />
+                        </label>
+       
+                        <input type="checkbox" name="language04" value="css3" id="language04"/>
+                        <label for="language04">
+                            <img src="./Icons/languages/css3_32px.png" alt="css3" />
+                        </label>
+
+                        <input type="checkbox" name="language05" value="react" id="language05"/>
+                        <label for="language05">
+                            <img src="./Icons/languages/react_32px.png" alt="react" />
+                        </label>
+
+                        <input type="checkbox" name="language06" value="vue" id="language06"/>
+                        <label for="language06">
+                            <img src="./Icons/languages/vue_js_32px.png" alt="vue" />
+                        </label>
+                
+                        <input type="checkbox" name="language07" value="node" id="language07"/>
+                        <label for="language07">
+                            <img src="./Icons/languages/nodejs_32px.png" alt="node" />
+                        </label>
+                
+                        <input type="checkbox" name="language08" value="mongo" id="language08"/>
+                        <label for="language08">
+                            <img src="./Icons/languages/mongodb_32px.png" alt="mongo" />
+                        </label>
+                
+                        <input type="checkbox" name="language09" value="java" id="language09"/>
+                        <label for="language09">
+                            <img src="./Icons/languages/java_32px.png" alt="java" />
+                        </label>
+                  
+                        <input type="checkbox" name="language10" value="kotlin" id="language10"/>
+                        <label for="language10">
+                            <img src="./Icons/languages/kotlin_32px.png" alt="kotlin" />
+                        </label>
+                 
+                        <input type="checkbox" name="language11" value="ruby" id="language11"/>
+                        <label for="language11">
+                            <img src="./Icons/languages/ruby_programming_language_32px.png" alt="ruby" />
+                        </label>
+              
+                        <input type="checkbox" name="language12" value="dart" id="language12"/>
+                        <label for="language12">
+                            <img src="./Icons/languages/dart_32px.png" alt="dart" />
+                        </label>
+             
+                        <input type="checkbox" name="language13" value="flutter" id="language13"/>
+                        <label for="language13">
+                            <img src="./Icons/languages/flutter_32px.png" alt="flutter" />
+                        </label>
+                 
+                        <input type="checkbox" name="language14" value="swift" id="language14"/>
+                        <label for="language14">
+                            <img src="./Icons/languages/swift_32px.png" alt="swift" />
+                        </label>
+             
+                        <input type="checkbox" name="language15" value="csharp" id="language15"/>
+                        <label for="language15">
+                            <img src="./Icons/languages/c_sharp_logo_2_32px.png" alt="csharp" />
+                        </label>
+               
+                        <input type="checkbox" name="language16" value="c++" id="language16"/>
+                        <label for="language16">
+                            <img src="./Icons/languages/c++_32px.png" alt="c++" />
+                        </label>
+
+                </div>
+            </div>
+        </div>
+        <div class="contRight">
+
+            <div class="avatarImage">
+                <label for="avatarFile">
+                    <img src="./Images/Profile.png" alt="Avatar" id="avatarImage"/>
+                </label>
+                <input 
+                type="file"
+                name="Avatar" 
+                id="avatarFile" 
+                accept="image/x-png,image/gif,image/jpeg"
+                onchange="imageGet()"/>
+            </div>
+
+            <div class="specialty">
+                <label for="specialty">Area de Especializaçao</label>
+                <select name="specialty" id="specialty">
+                    <option value="front">Front End</option>
+                    <option value="back">Back End</option>
+                    <option value="data">Database</option>
+                    <option value="Network">Network</option>
+                </select>
+            </div>
+        </div>
+        <div class="contButtons">
+            <button type="reset">Resetar</button>
+            <button type="submit">Confirmar</button>
+        </div>
+    </form>
+    </div>
+
+    <div class="containerOverlayer" id="containerOverlayer">
+        <div class="alertBox" id="alertBox">
+            <p class="alertTitle"></p>
+            <p class="alertText"></p>
+            <button class="confirmButton" onclick="AlertClose()">OK</button>
+        </div>
+    </div>
+    <script src="./script/index.js"></script>  
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+.alertBox {
+    width: 25rem;
+    min-height: 12rem;
+    background: rgb(238, 238, 238);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    border: solid 1px black;
+    gap: 0.5rem;
+}
+
+.alertTitle {
+    margin: 0;
+    height: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(56, 56, 56);
+    font-weight: 650;
+    text-transform: uppercase;
+}
+
+.alertText {
+    margin: 0;
+    min-height: 5rem;
+    width: 100%;
+    font-size: 1.15rem;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(56, 56, 56);
+    padding: 0 5rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.confirmButton {
+    margin: 0;
+    height: 2.5rem;
+    width: 6rem;
+    border-radius: 10px;
+    background: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: rgb(139, 218, 193);
+    transition: 2s;
+}
+
+.confirmButton:hover {
+    -webkit-filter: saturate(10) drop-shadow(0 0 2px rgb(42, 199, 94));
+    transition: 2s;
+}
